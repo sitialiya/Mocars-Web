@@ -1,0 +1,80 @@
+body{
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #2c3e50;
+    margin:0;
+    padding:0;
+  }
+
+span{
+    color:#2BD6B4;
+  }
+
+html {
+    height: 100%;
+  }
+
+.biodata-box {
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+
+.biodata-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+  }
+
+.biodata-box img
+  {
+    width: 640px;
+    height: 360px;
+    display: block;
+    margin: 0 40px 0 40px;
+  }
+
+ul, p{
+  margin: 0 40px 0 40px;
+  padding: 10px 12px;
+  line-height: 16px;
+}
+
+p{
+  padding: 0;
+}
+
+.tombol{
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 9px;
+    display: block;
+    float: left;
+    width: 55%;
+    margin: 5px 150px 5px 150px;
+    text-align: center;
+    color: white;
+}
+ 
+.tombol:hover
+{
+    background-color: black;
+    transition-duration: 700ms;
+}
+ 
+.tombol-detail
+{
+  background-color: #ffc200;
+}
+
+a{
+  margin: 0 40px 0 40px;
+}

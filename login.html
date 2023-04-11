@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/unicons.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- MAIN STYLE -->
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link rel="stylesheet" type="text/css" href="regist.css">
+    </head>
+    <body>
+        
+        <section class="login py-5 d-lg-flex justify-content-center align-items-center" id="login">
+            <div class="container">
+                <div class="row">
+    
+                    <div class="col-lg-6 col-12">
+                      <!--<h2 class="mb-4">Login</h2>-->
+    
+                      <div class="login-box">
+                        <h2>Login</h2>
+                        <form action="login.php" method="POST">
+                          <div class="user-box">
+                            <input type="text" name="username" required="">
+                            <label>Username</label>
+                          </div>
+                          <div class="user-box">
+                            <input type="password" name="pass" required="">
+                            <label>Password</label>
+                          </div>
+                          <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <button>Login</button>
+                          </a>
+                        </form>
+                        <div class="regist">
+                          Tidak memiliki akun? <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Daftar</button>
+                        </div>     
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="id01" class="modal">
+  
+          <form class="modal-content animate" action="daftar.php" method="POST">
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="username" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="pass" required>
+              
+              <label for="nik"><b>NIK</b></label>
+              <input type="text" placeholder="Enter NIK" name="nik" required>
+              
+              <label for="nohp"><b>NO HP</b></label>
+              <input type="text" placeholder="Enter NO HP" name="nohp" required>
+              
+              <label for="ttl"><b>TTL</b></label>
+              <input type="text" placeholder="Enter KOTA" name="ttlkota" required>
+              <input type="date" placeholder="Enter TANGGAL" name="ttltgl" required>
+              
+              <label for="alamat"><b>ALAMAT</b></label>
+              <input type="text" placeholder="Enter PROVINSI" name="alamatprov" required>
+              <input type="text" placeholder="Enter KOTA/KABUPATEN" name="alamatkota" required>
+              
+              <input type="text" placeholder="Enter ALAMAT" name="alamatdetail" required>
+                
+              <button type="submit">Submit</button>
+              
+            </div>
+        
+            <div class="container">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              
+            </div>
+          </form>
+        </div>
+        
+        
+        <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+          
+    </body>
+    <!-- FEATURES -->
+    </html>
